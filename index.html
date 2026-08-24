@@ -4,396 +4,101 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DeepSeek Oracle — Independent Music Tools, Free Guides &amp; Creator Resources</title>
-<meta name="description" content="Original guides for free BPM detection, independent music streaming, and practical creator tools by Justin Helmer (Excavationpro). Clear articles, about the author, privacy, and free public tools.">
+<meta name="description" content="Original guides for free BPM detection, independent music streaming, and practical creator tools by Justin Helmer (Excavationpro).">
 <meta name="author" content="Justin Helmer / Excavationpro">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://deepseekoracle.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=IBM+Plex+Mono:wght@400&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/home.css">
+<link rel="image_src" href="https://deepseekoracle.com/assets/og-home.jpg">
 <meta name="google-adsense-account" content="ca-pub-0646320966060599">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0646320966060599" crossorigin="anonymous"></script>
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://deepseekoracle.com/">
-<meta property="og:title" content="DeepSeek Oracle — Free Music &amp; Creator Guides">
-<meta property="og:description" content="Practical, original writing on BPM tools, independent streaming, and free creator utilities by Justin Helmer.">
-<meta property="og:site_name" content="DeepSeek Oracle">
+<meta property="og:title" content="DeepSeek Oracle — free music &amp; creator guides">
+<meta property="og:description" content="Practical writing on BPM tools, independent streaming, and free utilities by Justin Helmer.">
+<meta property="og:image" content="https://deepseekoracle.com/assets/og-home.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="DeepSeek Oracle — Free Music &amp; Creator Guides">
-<meta name="twitter:description" content="Original guides for BPM, independent music, and free tools for producers.">
 <meta name="twitter:site" content="@Excavationpro">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "name": "DeepSeek Oracle",
-      "url": "https://deepseekoracle.com/",
-      "description": "Independent music tools and original creator guides by Justin Helmer.",
-      "publisher": { "@id": "https://deepseekoracle.com/#person" }
-    },
-    {
-      "@type": "Person",
-      "@id": "https://deepseekoracle.com/#person",
-      "name": "Justin Helmer",
-      "alternateName": ["Excavationpro", "Lightfather"],
-      "url": "https://deepseekoracle.com/about.html",
-      "sameAs": [
-        "https://x.com/Excavationpro",
-        "https://github.com/DeepSeekOracle",
-        "https://open.spotify.com/artist/6CkZ4bN2xu3WRKbjEL3u2S"
-      ]
-    },
-    {
-      "@type": "WebPage",
-      "name": "DeepSeek Oracle Home",
-      "url": "https://deepseekoracle.com/",
-      "isPartOf": { "@type": "WebSite", "url": "https://deepseekoracle.com/" },
-      "about": "Free guides for music producers and independent creators"
-    }
-  ]
-}
-</script>
-<style>
-:root {
-  --bg: #f7f6f3;
-  --card: #ffffff;
-  --ink: #1a1a1a;
-  --muted: #5c5c5c;
-  --line: #e4e0d8;
-  --accent: #0b6e4f;
-  --accent2: #1a3a5c;
-  --link: #0a5c8a;
-}
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-  margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
-  color: var(--ink);
-  background: var(--bg);
-  line-height: 1.7;
-  font-size: 18px;
-}
-a { color: var(--link); }
-a:hover { text-decoration: underline; }
-.wrap { max-width: 760px; margin: 0 auto; padding: 0 1.25rem; }
-header.site {
-  background: var(--card);
-  border-bottom: 1px solid var(--line);
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 20;
-}
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem 1.1rem;
-  align-items: center;
-  justify-content: space-between;
-}
-.brand {
-  font-family: system-ui, Segoe UI, sans-serif;
-  font-weight: 800;
-  font-size: 1rem;
-  letter-spacing: 0.02em;
-  color: var(--accent2);
-  text-decoration: none;
-}
-.navlinks {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem 1rem;
-  font-family: system-ui, Segoe UI, sans-serif;
-  font-size: 0.9rem;
-}
-.navlinks a { text-decoration: none; color: var(--muted); }
-.navlinks a:hover { color: var(--accent); }
-.hero {
-  padding: 2.5rem 0 1.5rem;
-}
-.hero h1 {
-  font-size: clamp(1.75rem, 4vw, 2.35rem);
-  line-height: 1.25;
-  margin: 0 0 0.75rem;
-  color: var(--accent2);
-}
-.hero .lead {
-  font-size: 1.1rem;
-  color: var(--muted);
-  margin: 0 0 1.25rem;
-}
-.cta-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem;
-  font-family: system-ui, Segoe UI, sans-serif;
-}
-.btn {
-  display: inline-block;
-  padding: 0.7rem 1.1rem;
-  border-radius: 8px;
-  text-decoration: none !important;
-  font-weight: 700;
-  font-size: 0.92rem;
-  border: 1px solid var(--line);
-  background: var(--card);
-  color: var(--accent2);
-}
-.btn.primary {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #fff;
-}
-.btn:hover { filter: brightness(1.05); }
-.notice {
-  margin: 1.25rem 0 0;
-  padding: 0.9rem 1rem;
-  background: #eef6f2;
-  border: 1px solid #c5e0d4;
-  border-radius: 10px;
-  font-family: system-ui, Segoe UI, sans-serif;
-  font-size: 0.92rem;
-  color: #234;
-}
-.notice strong { color: var(--accent); }
-main { padding-bottom: 3rem; }
-article.card {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 1.5rem 1.35rem;
-  margin: 1.25rem 0;
-}
-article.card h2 {
-  margin: 0 0 0.5rem;
-  font-size: 1.35rem;
-  color: var(--accent2);
-}
-article.card h3 {
-  margin: 1.25rem 0 0.4rem;
-  font-size: 1.1rem;
-}
-article.card p { margin: 0.65rem 0; }
-article.card ul { margin: 0.5rem 0 0.5rem 1.2rem; }
-.meta {
-  font-family: system-ui, Segoe UI, sans-serif;
-  font-size: 0.82rem;
-  color: var(--muted);
-  margin-bottom: 0.75rem;
-}
-.read-more {
-  font-family: system-ui, Segoe UI, sans-serif;
-  font-weight: 700;
-  font-size: 0.9rem;
-}
-aside.box {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 1.25rem 1.35rem;
-  margin: 1.5rem 0;
-  font-family: system-ui, Segoe UI, sans-serif;
-  font-size: 0.95rem;
-}
-aside.box h2 {
-  margin: 0 0 0.5rem;
-  font-size: 1.05rem;
-  font-family: Georgia, serif;
-  color: var(--accent2);
-}
-footer.site {
-  border-top: 1px solid var(--line);
-  padding: 1.5rem 0 2.5rem;
-  font-family: system-ui, Segoe UI, sans-serif;
-  font-size: 0.88rem;
-  color: var(--muted);
-}
-footer.site nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 1rem;
-  margin-bottom: 0.75rem;
-}
-footer.site a { color: var(--link); }
-.ad-slot {
-  margin: 1.25rem 0;
-  min-height: 90px;
-  padding: 8px;
-  background: var(--card);
-  border: 1px dashed var(--line);
-  border-radius: 8px;
-  text-align: center;
-}
-.ad-label {
-  font-family: system-ui, sans-serif;
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #999;
-  margin-bottom: 6px;
-}
-</style>
+<meta name="twitter:title" content="DeepSeek Oracle — free music &amp; creator guides">
+<meta name="twitter:description" content="Original guides for BPM, independent music, and free tools.">
+<meta name="twitter:image" content="https://deepseekoracle.com/assets/og-home.jpg">
 </head>
-<body>
-<header class="site">
-  <div class="wrap nav">
-    <a class="brand" href="/">DeepSeek Oracle</a>
-    <nav class="navlinks" aria-label="Primary">
-      <a href="/">Home</a>
-      <a href="/about.html">About</a>
-      <a href="/articles/free-bpm-detection-guide.html">BPM guide</a>
-      <a href="/articles/independent-music-streaming.html">Streaming</a>
-      <a href="/articles/free-tools-for-producers.html">Free tools</a>
-      <a href="/lygo-systems-hub.html">Full systems hub</a>
-      <a href="/contact.html">Contact</a>
-      <a href="/privacy.html">Privacy</a>
-    </nav>
-  </div>
+<body class="home">
+<header class="top">
+  <a class="brand" href="/">DeepSeek Oracle</a>
+  <nav>
+    <a href="/" aria-current="page">Home</a>
+    <a href="/articles/free-bpm-detection-guide.html">Guides</a>
+    <a href="/about.html">About</a>
+    <a href="/lygo-systems-hub.html">Systems</a>
+    <a href="https://bpmfinder.ca/">BPM</a>
+  </nav>
 </header>
-
-<div class="wrap">
-  <section class="hero">
-    <h1>Original guides for independent music and free creator tools</h1>
-    <p class="lead">
-      Welcome to <strong>DeepSeek Oracle</strong> — a writing and tools home run by
-      <strong>Justin Helmer</strong> (Excavationpro). Here you will find practical articles on tempo detection,
-      independent streaming, and free utilities that keep your work on your machine whenever possible.
-    </p>
+<section class="hero">
+  <div class="hero-inner">
+    <p class="kicker">Justin Helmer · independent publisher</p>
+    <h1>Original guides for independent music and free creator tools that stay on your machine.</h1>
+    <p class="lead">Welcome to <strong>DeepSeek Oracle</strong> — a writing and tools home run by <strong>Justin Helmer</strong> (Excavationpro). Practical articles on tempo detection, independent streaming, and free utilities. No signup required.</p>
     <div class="cta-row">
       <a class="btn primary" href="/articles/free-bpm-detection-guide.html">Read the free BPM guide</a>
-      <a class="btn" href="/about.html">About the author</a>
-      <a class="btn" href="/lygo-systems-hub.html">Open full systems hub →</a>
+      <a class="btn ghost" href="/about.html">About the author</a>
+      <a class="btn ghost" href="/lygo-systems-hub.html">Full systems hub</a>
     </div>
-    <p class="notice">
-      <strong>Looking for the full LYGO / lattice navigation hub?</strong>
-      It is preserved exactly as before at
-      <a href="/lygo-systems-hub.html">deepseekoracle.com/lygo-systems-hub.html</a>
-      (downloads, champion portals, ledgers, and advanced network tools).
-      This homepage is a clear content front door for readers and publisher review.
-    </p>
-  </section>
-
-  <div class="ad-slot" aria-label="Advertisement">
-    <div class="ad-label">Advertisement</div>
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-0646320966060599"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    <p class="notice">The dense LYGO / lattice hub is unchanged at <a href="/lygo-systems-hub.html">/lygo-systems-hub.html</a>. This homepage is the content front door.</p>
   </div>
-
-  <main>
-    <article class="card" id="featured">
-      <h2>What you will find on this site</h2>
-      <p class="meta">Updated for readers · Independent publisher · No signup required for guides</p>
-      <p>
-        Many music and software landing pages are only link dumps. AdSense reviewers (and readers) need
-        <em>unique, helpful text</em> first. So this front page is written as a real publication:
-        long-form guides, an author page, contact, privacy, and terms — with the denser systems portal
-        available one click away for people who already know the project.
-      </p>
-      <p>
-        Everything here is created by Justin Helmer for independent artists, hobby producers, and
-        people who prefer free browser tools over locked app stores. You can use the guides whether
-        or not you ever open the advanced hub.
-      </p>
-      <ul>
-        <li><a href="/articles/free-bpm-detection-guide.html">How free BPM detection works in the browser</a></li>
-        <li><a href="/articles/independent-music-streaming.html">Independent music streaming without a major label</a></li>
-        <li><a href="/articles/free-tools-for-producers.html">Free tools producers can use today</a></li>
-        <li><a href="https://bpmfinder.ca/">BPMfinder.ca</a> — free online tempo detector</li>
-        <li><a href="https://asiancoastline.com/">asiancoastline.com</a> — free listen portal for original tracks</li>
-      </ul>
-    </article>
-
-    <article class="card">
-      <h2>Why free BPM tools still matter</h2>
-      <p class="meta">Guide overview · Full article linked below</p>
-      <p>
-        Tempo is the shared language of DJs, dancers, and producers. When you only need a quick read
-        of an MP3 or WAV, installing a full digital audio workstation is slow. Browser-based BPM
-        detection analyzes audio locally with Web Audio APIs so your unreleased demos do not have to
-        leave your device.
-      </p>
-      <p>
-        In the full guide we explain how confidence scores work, when half-time and double-time
-        buttons help, how tap tempo saves ambient tracks, and how to use a free BPM result when you
-        prepare a setlist or a practice loop. The writing is original to this site and written for
-        people who want clarity — not marketing hype.
-      </p>
-      <p class="read-more"><a href="/articles/free-bpm-detection-guide.html">Continue reading: Free BPM detection guide →</a></p>
-    </article>
-
-    <article class="card">
-      <h2>Independent streaming for original music</h2>
-      <p class="meta">Guide overview · Full article linked below</p>
-      <p>
-        Major distributors are useful, but they are not the only path. Independent artists can host
-        free listen experiences, publish an ISRC-aware catalog page, and still list on Spotify or
-        YouTube Music when they choose. The important part is knowing what you control: masters,
-        alternate free streams, and how you talk to listeners.
-      </p>
-      <p>
-        Our streaming article covers free public players, why content-addressed files help integrity,
-        how to think about live rooms (Kick, Rumble, Twitch), and how optional support links (such as
-        PayPal) can sit beside free access without forcing a paywall.
-      </p>
-      <p class="read-more"><a href="/articles/independent-music-streaming.html">Continue reading: Independent music streaming →</a></p>
-    </article>
-
-    <article class="card">
-      <h2>Free tools producers can use without a subscription</h2>
-      <p class="meta">Guide overview · Full article linked below</p>
-      <p>
-        Subscription software is everywhere. That is fine when you need it — but many day-to-day
-        tasks only need a focused free tool: tempo check, a public listen page for your own catalog,
-        resonance experiments, or a clean privacy policy for a small site. We document tools we
-        actually maintain so the advice matches the product.
-      </p>
-      <p class="read-more"><a href="/articles/free-tools-for-producers.html">Continue reading: Free tools for producers →</a></p>
-    </article>
-
-    <aside class="box">
-      <h2>Full systems hub (advanced)</h2>
-      <p>
-        If you arrived looking for the dense navigation hub (USB champion downloads, champion
-        portals, lattice ledgers, and network tools), it is still here — unchanged — on a separate page:
-      </p>
-      <p><a class="btn primary" href="/lygo-systems-hub.html">Open LYGO Systems Hub</a></p>
-      <p style="margin-top:0.75rem;color:var(--muted);font-size:0.88rem;">
-        That hub is for power users. This homepage is for readable articles and site policy pages
-        that support a healthy publisher experience.
-      </p>
-    </aside>
-
-    <aside class="box">
-      <h2>About &amp; policies</h2>
-      <p>
-        <a href="/about.html">About Justin Helmer / Excavationpro</a> ·
-        <a href="/contact.html">Contact</a> ·
-        <a href="/privacy.html">Privacy policy</a> ·
-        <a href="/terms.html">Terms of use</a>
-      </p>
-    </aside>
-  </main>
-</div>
-
+</section>
+<main class="sheet">
+<article>
+  <h2>What you will find on this site</h2>
+  <p>Many music and software landing pages are only link dumps. Readers need unique, helpful text first. So this front page is written as a real publication: long-form guides, an author page, contact, privacy, and terms — with the denser systems portal one click away.</p>
+  <p>Everything here is created by Justin Helmer for independent artists, hobby producers, and people who prefer free browser tools over locked app stores.</p>
+  <ul>
+    <li><a href="/articles/free-bpm-detection-guide.html">How free BPM detection works in the browser</a></li>
+    <li><a href="/articles/independent-music-streaming.html">Independent music streaming without a major label</a></li>
+    <li><a href="/articles/free-tools-for-producers.html">Free tools producers can use today</a></li>
+    <li><a href="https://bpmfinder.ca/">BPMfinder.ca</a> — free online tempo detector</li>
+    <li><a href="https://asiancoastline.com/">asiancoastline.com</a> — free listen portal</li>
+  </ul>
+</article>
+<div class="ad-slot" aria-label="Advertisement"><div class="ad-label">Advertisement</div>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0646320966060599" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+<article>
+  <h2>Why free BPM tools still matter</h2>
+  <p>Tempo is the shared language of DJs, dancers, and producers. When you only need a quick read of an MP3 or WAV, installing a full DAW is slow. Browser-based BPM detection analyzes audio locally with Web Audio APIs so unreleased demos do not have to leave your device.</p>
+  <p>The full guide explains confidence scores, half-time and double-time, tap tempo, and how to use a free BPM result in a setlist or practice loop.</p>
+</article>
+<article>
+  <h2>Independent streaming for original music</h2>
+  <p>Major distributors are useful, but they are not the only path. Independent artists can host free listen experiences, publish an ISRC-aware catalog, and still list on Spotify or YouTube Music. You control masters, alternate free streams, and how you talk to listeners.</p>
+</article>
+<article>
+  <h2>Free tools without a subscription</h2>
+  <p>Many day-to-day tasks only need a focused free tool: tempo check, a public listen page, resonance experiments. We document tools we actually maintain so the advice matches the product.</p>
+</article>
+<article>
+  <h2>Full systems hub (advanced)</h2>
+  <p>USB champion downloads, champion portals, lattice ledgers, and network tools remain at <a href="/lygo-systems-hub.html">LYGO Systems Hub</a>. That hub is for power users. This homepage is for readable articles and site policy.</p>
+</article>
+<p><a href="/about.html">About</a> · <a href="/contact.html">Contact</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
+</main>
 <footer class="site">
-  <div class="wrap">
-    <nav aria-label="Footer">
-      <a href="/">Home</a>
-      <a href="/about.html">About</a>
-      <a href="/contact.html">Contact</a>
-      <a href="/privacy.html">Privacy</a>
-      <a href="/terms.html">Terms</a>
-      <a href="/lygo-systems-hub.html">Systems hub</a>
-      <a href="https://bpmfinder.ca/">BPM Finder</a>
-      <a href="https://eternalhaven.ca/">Eternal Haven</a>
-    </nav>
-    <p>© <span id="y"></span> Justin Helmer / DeepSeek Oracle. Original educational content. Free tools remain free to use.</p>
-  </div>
+  <p class="family">
+    <a href="https://eternalhaven.ca/">eternalhaven.ca</a>
+    <a href="https://excavationpro.ca/">excavationpro.ca</a>
+    <a href="https://deepseekoracle.com/">deepseekoracle.com</a>
+    <a href="https://chatagent.ca/">chatagent.ca</a>
+    <a href="https://asiancoastline.com/">asiancoastline.com</a>
+    <a href="https://bpmfinder.ca/">bpmfinder.ca</a>
+  </p>
+  <p>© <span class="y"></span> Justin Helmer / DeepSeek Oracle.</p>
 </footer>
-<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+<script>document.querySelectorAll(".y").forEach(function(n){n.textContent=new Date().getFullYear()});</script>
 </body>
 </html>
