@@ -1,6 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-cookie-key="deepseekoracle_cookies">
 <head>
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/favicon.svg">
+<link rel="stylesheet" href="/assets/site-kit.css">
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact — DeepSeek Oracle</title>
@@ -36,8 +40,44 @@ DeepSeek Oracle is a small independent site. For questions about the guides, fre
 Please do not send unsolicited bulk email or attach large audio files unsolicited. For tool bugs, include the page URL, browser name, and a short description of what you expected versus what happened.
 </p>
 <p class="muted">We aim to keep free tools free. Advertising (when approved) and optional donations help with hosting.</p>
+
+    <h2>On-site form</h2>
+    <p>Public contact remains <a href="https://x.com/excavationpro">@Excavationpro</a> on X and GitHub DeepSeekOracle. No street address is published.</p>
+    <form class="contact-form" id="contactForm" action="/thanks.html" method="get" novalidate>
+      <div class="field">
+        <label for="cname">Name</label>
+        <input id="cname" name="name" required autocomplete="name">
+        <p class="field-err">Please enter your name.</p>
+      </div>
+      <div class="field">
+        <label for="cemail">Email</label>
+        <input id="cemail" name="email" type="email" required autocomplete="email">
+        <p class="field-err">Please enter a valid email.</p>
+      </div>
+      <div class="field">
+        <label for="cmsg">Message</label>
+        <textarea id="cmsg" name="msg" rows="5" required></textarea>
+        <p class="field-err">Please write a short message. Do not paste secrets.</p>
+      </div>
+      <button type="submit">Send</button>
+    </form>
+
 </article>
 <p class="muted" style="margin-top:1rem"><a href="/">← Back home</a></p>
 </div>
+
+<div class="sticky-cta" aria-label="Mobile actions">
+  <a class="pri" href="/">Home</a>
+  <a class="sec" href="https://www.paypal.com/paypalme/ExcavationPro">Donate</a>
+</div>
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie consent">
+  <div>Ads may use cookies after you accept. <a href="/privacy.html">Privacy</a></div>
+  <div>
+    <button type="button" class="ok" id="cookieOk">Accept</button>
+    <button type="button" class="no" id="cookieNo">Decline</button>
+  </div>
+</div>
+<script src="/assets/site-kit.js" defer></script>
+
 </body>
 </html>
